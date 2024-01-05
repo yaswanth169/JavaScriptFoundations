@@ -1,0 +1,224 @@
+get length of string
+
+function getlen(str){
+  return str.length;
+}
+
+const ans = getlen("hello");
+
+console.log(ans)
+
+find the index using indexOf method
+
+function getindexOf(str,target){
+  console.log(str);
+  console.log(str.indexOf(target));
+}
+
+getindexOf("hello world","wold");
+
+how to find last index of target string right ???
+
+function getlastindex(str,target){
+  return str.lastIndexOf(target);
+}
+
+const ans = getlastindex("hello world yaswanth","yasanth");
+console.log(ans);
+
+slicing the string : where from given starting - to - ending i have to print the string ......
+
+function getslice(str, start, end) {
+  return str.slice(start, end);
+}
+
+const ans = getslice("hello world", 1, 5);
+
+console.log(ans);
+
+find the substring ... of a string by giving starting and ending indexes....?????
+
+function getsubstring(str, start, end) {
+  return str.substring(start, end);
+}
+
+console.log(getsubstring("yaswanth", 0, 4));
+
+how can we replace a particular string with another string guys ?????
+here comes a method called string.replace(target,replacingstring)......
+
+function replacestring(str, target, replaceingstring) {
+  console.log(str.replace(target, replaceingstring));
+}
+
+replacestring("hello teja", "teja", "yaswanth");
+
+guys dont be hurry right .....
+just imagine if i wanna trim the particular string with some target....
+solution would be what ..?? -- where we use split method that accepts one arguments that is separator from where....
+
+function dosplit(str, separator) {
+  return str.split(separator);
+}
+
+console.log(dosplit("hwllo world", " "));
+
+one more method where it removes all the spaces that are in starting position 'or' and 'and' ending position...  using the trim method ....
+
+function dotrim(str) {
+  console.log(str.trim());
+}
+
+dotrim(" Hello Yaswanth ");
+
+question is that move everything to uppercase : solution : string.toUppercase()
+
+function toupper(str) {
+  return str.toUpperCase();
+}
+
+console.log(toupper("yaswanth"));
+
+question is that move everything to lowercae : solution :
+string.tolowerCase()
+
+function tolower(str) {
+  console.log(str.toLowerCase());
+}
+
+tolower("YASWANTH");
+
+Number parsing : to integer
+Number parsing : to float
+
+function toparseint(str){
+  console.log(parseInt(str));
+}
+
+toparseint("42pz")
+toparseint("43")
+toparseint("3.14")
+
+function toparsefloat(str){
+  console.log(parseFloat(str));
+}
+
+toparsefloat("42pz")
+toparsefloat("43")
+toparsefloat("3.14")
+
+lets go with arrays concept in javascript
+
+lets go with push() method : where it takes an argument as input and inserted into the array
+
+function pushelement(arr,element){
+  console.log(arr);
+  arr.push(element);
+  console.log(arr);
+}
+
+arr1=[1,2,3,4]
+pushelement(arr1,6);
+
+pop method which is used to remove an element from the array
+
+function popele(arr){
+  console.log(arr);
+  arr.pop();
+  console.log(arr);
+}
+
+popele([1,2,3,4,5]);
+
+shift method : where element from first is removed like queue front removal.........
+
+function shifting(arr) {
+  console.log(arr);
+  arr.shift();
+  console.log(arr);
+}
+
+shifting([1, 2, 3, 4, 5]);
+
+unshift method : where we can add elements from front side .......
+
+function unshifting(arr,element){
+  console.log(arr);
+  arr.unshift(element);
+  console.log(arr);
+}
+
+unshifting([1,2,3,4,5],0);
+
+hey guys listen .... question : how to add two arrays  which means how to concat the two arrays......
+
+function concatarrays(arr1, arr2) {
+  arr3 = arr1.concat(arr2);
+
+  console.log(arr3);
+}
+
+concatarrays([1, 2, 3, 4, 5], [6, 7, 8, 9, 0]);
+
+for each loop in javascript......where it prints element with an index value
+
+function foreachloop(arr) {
+  console.log(arr);
+  arr.forEach(function (item, index) {
+    console.log(item, index);
+  });
+}
+
+foreachloop([1, 2, 3, 4, 5]);
+
+function named as map -- where we can map values to the existing numbers in the array......
+and store in the another new array......
+
+function mapping(arr) {
+  console.log(arr);
+  let newarr = arr.map(function (item) {
+    return item * 2;
+  });
+  console.log(newarr);
+}
+
+mapping([1, 2, 5, 3, 4]);
+
+filtering the elements based on condition and moving to another array..
+
+function filterele(arr){
+  console.log(arr);
+  let newarr = arr.filter(function(item){
+    return item > 3;
+  })
+  console.log(newarr);
+}
+
+filterele([1,2,3,4,5,6,7,8,9])
+
+find method which is used to find the element where it is found or not......
+
+function getele(arr){
+  console.log(arr);
+  let element = arr.find(function(item){
+    return item > 3;
+  })
+
+  console.log(element)
+}
+
+getele([1,2,3,4,5,6])
+
+sorting the array based on asc or desc......
+
+function sorting(arr){
+  console.log(arr);
+
+  arr.sort(function(a,b){
+    return b-a;
+  })
+
+  console.log(arr);
+}
+
+sorting([1,7,2,3,5,3,4,6])
